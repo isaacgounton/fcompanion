@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Freelancer Companion</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">Freelancer Companion</a>
+            </div>
+            <ul>
+                <li><a href="/#features">Features</a></li>
+                <li><a href="/#how-it-works">How It Works</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="signup-container">
+                <h1>Join Freelancer Companion</h1>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="freelance-type">Primary Freelance Service</label>
+                        <select id="freelance-type" name="freelance-type" required>
+                            <option value="">Select your primary service</option>
+                            <option value="writing">Writing & Content Creation</option>
+                            <option value="design">Graphic Design</option>
+                            <option value="development">Web Development</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="video">Video Production</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+                <p class="terms">By signing up, you agree to our <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.</p>
+                <p class="login-link">Already have an account? <a href="/login">Log in here</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Freelancer Companion. All rights reserved.</p>
+    </footer>
+</body>
+</html>
